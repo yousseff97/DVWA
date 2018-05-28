@@ -11,6 +11,7 @@ if( isset( $_POST[ 'Upload' ] ) ) {
 	$uploaded_size = $_FILES[ 'uploaded' ][ 'size' ];
 	$uploaded_type = $_FILES[ 'uploaded' ][ 'type' ];
 	$uploaded_tmp  = $_FILES[ 'uploaded' ][ 'tmp_name' ];
+	//$_FILES["file"]["tmp_name"] contains the actual copy of your file content on the server while	
 
 	// Where are we going to be writing to?
 	$target_path   = DVWA_WEB_PAGE_TO_ROOT . 'hackable/uploads/';
